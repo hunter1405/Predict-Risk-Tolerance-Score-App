@@ -45,7 +45,7 @@ else:
 
 # Combines user input features with entire penguins dataset
 # This will be useful for the encoding phase
-penguins_raw = pd.read_csv('C:/Users/ACER/data_raw.csv')
+penguins_raw = pd.read_csv('data_raw.csv')
 penguins = penguins_raw.drop(columns=['Score','Unnamed: 0'])
 df = pd.concat([input_df,penguins],axis=0)
 
