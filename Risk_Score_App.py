@@ -3,15 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 
-import math
-from sklearn import neighbors
-from sklearn import linear_model
-from sklearn import svm
-import statsmodels.formula.api as smf
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsRegressor
-from sklearn.metrics import mean_absolute_error
-from sklearn.metrics import mean_squared_error
 
 st.write("""
 # Risk Tolerance Score Prediction App
