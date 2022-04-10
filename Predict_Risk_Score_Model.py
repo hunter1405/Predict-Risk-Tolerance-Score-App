@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import math
 
+from sklearn import neighbors
+import statsmodels.formula.api as smf
+
 df_full = pd.read_csv('C:/Users/ACER/FINAL.csv')
 df_full = df_full.drop('Unnamed: 0',axis=1)
 df_1 = df_full.loc[:,'Age':'Objective']
