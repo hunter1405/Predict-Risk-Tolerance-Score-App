@@ -3,11 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import math
-from sklearn import tree
-from sklearn import neighbors
-from sklearn import linear_model
-from sklearn import svm
-import statsmodels.formula.api as smf
 
 df_full = pd.read_csv('C:/Users/ACER/FINAL.csv')
 df_full = df_full.drop('Unnamed: 0',axis=1)
