@@ -39,7 +39,8 @@ else:
                 'Gender': Gender,
                 'Marital': Marital,
                 'Income': Income,
-                'Ratio': Education,
+                'Ratio': Ratio,
+                'Education': Education,
                 'Profession': Profession,
                 'Optimism': Optimism,
                 'Objective': Objective}
