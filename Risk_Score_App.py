@@ -102,7 +102,7 @@ st.markdown('  B. Đầu tư.')
 st.markdown('  C. Khác.')
 
 
-st.write('---')
+st.markdown('---')
 st.header('User Input features')
 
 
@@ -112,17 +112,16 @@ if uploaded_file is not None:
 else:
     st.write('Awaiting CSV file to be uploaded. Currently using example input parameters (shown below).')
     st.write(df)
-
+st.markdown('---')
 # Reads in saved classification model
 load_clf = pickle.load(open('model.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = load_clf.predict(df)
-st.write('---')
 
 st.header('Prediction of Risk Tolerance Score')
 st.subheader(prediction)
-st.write('---')
+st.markdown('---')
 
 def classify(prediction):
     if load_clf.predict(df) <= 18:
@@ -138,4 +137,4 @@ def classify(prediction):
         
 st.header('Level')
 classify(prediction)
-st.write('---')
+st.markdown('---')
