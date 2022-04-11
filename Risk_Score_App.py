@@ -3,6 +3,10 @@ import pandas as pd
 import numpy as np
 import pickle
 
+st.image(
+    "https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png",
+    width=100,
+)
 
 st.write("""
 # Risk Tolerance Score Prediction App
