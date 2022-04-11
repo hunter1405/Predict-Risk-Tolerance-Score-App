@@ -108,12 +108,8 @@ with st.beta_expander("Quesiton"):
 with st.beta_expander("Levels"):
     st.subheader('Score:  0 – 18')
     st.markdown(' Low tolerance for risk')
-    st.subheader('Score:  19 – 22')
-    st.markdown(' Below-average tolerance for risk ')
-    st.subheader('Score:  23 – 28')
+    st.subheader('Score:  19 – 32')
     st.markdown(' Average/moderate tolerance for risk')
-    st.subheader('Score:  29 – 32')
-    st.markdown(' Above-average tolerance for risk')
     st.subheader('Score:  33 – 47')
     st.markdown(' High tolerance for risk ')
 
@@ -141,12 +137,8 @@ st.markdown('---')
 def classify(prediction):
     if load_clf.predict(df) <= 18:
         st.subheader("Low tolerance for risk")
-    elif load_clf.predict(df) >= 19 and load_clf.predict(df)<=22:
-        st.subheader("Below-average tolerance for risk")
-    elif load_clf.predict(df) >= 23 and load_clf.predict(df)<=28:
-           st.subheader("Average/moderate tolerance for risk")
-    elif load_clf.predict(df) >= 29 and load_clf.predict(df)<=32:
-           st.subheader("Above-average tolerance for risk")         
+    elif load_clf.predict(df) >= 19 and load_clf.predict(df)<=32:
+        st.subheader("Average/moderate tolerance for risk")     
     else:
         st.write("High tolerance for risk")
         
