@@ -7,7 +7,7 @@ import pickle
 st.write("""
 # Risk Tolerance Score Prediction App
 This app predicts the **Risk Tolerance** score!
-Data obtained from UEL-ers in Python by ***Group 35***.
+Data obtained from **UEL-ers** in Python by ***Group 35***.
 """)
 
 st.sidebar.subheader('User Input Features')
