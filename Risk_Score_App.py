@@ -102,7 +102,7 @@ st.markdown('  B. Đầu tư.')
 st.markdown('  C. Khác.')
 
 
-
+st.write('---')
 st.header('User Input features')
 
 
@@ -118,10 +118,10 @@ load_clf = pickle.load(open('model.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = load_clf.predict(df)
-
+st.write('---')
 
 st.header('Prediction of Risk Tolerance Score')
-st.write(prediction)
+st.subheader(prediction)
 st.write('---')
 
 def classify(prediction):
