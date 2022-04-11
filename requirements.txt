@@ -4,7 +4,6 @@ base58==2.0.0
 pickleshare==0.7.5
 numpy==1.18.1
 click<=8.0.4
-sklearn==0.24.2
-sklearn.base==0.24.2
-sklearn.utils._joblib==1.1.0
+sklearn==0.0
+
 
