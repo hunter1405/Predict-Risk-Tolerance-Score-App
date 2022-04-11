@@ -105,6 +105,17 @@ with st.beta_expander("Quesiton"):
     st.markdown('  B. Đầu tư.')
     st.markdown('  C. Khác.')
 
+with st.beta_expander("Levels"):
+    st.subheader('Score:  0 – 18')
+    st.markdown(' Low tolerance for risk')
+    st.subheader('Score:  19 – 22')
+    st.markdown(' Below-average tolerance for risk ')
+    st.subheader('Score:  23 – 28')
+    st.markdown(' Average/moderate tolerance for risk')
+    st.subheader('Score:  29 – 32')
+    st.markdown(' Above-average tolerance for risk')
+    st.subheader('Score:  33 – 47')
+    st.markdown(' High tolerance for risk ')
 
 st.markdown('---')
 st.header('User Input features')
