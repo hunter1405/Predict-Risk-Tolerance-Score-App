@@ -126,13 +126,13 @@ st.write('---')
 
 def classify(prediction):
     if load_clf.predict(df) <= 18:
-        st.write("Low tolerance for risk")
+        st.subheader("Low tolerance for risk")
     elif load_clf.predict(df) >= 19 and load_clf.predict(df)<=22:
-        st.write("Below-average tolerance for risk")
+        st.subheader("Below-average tolerance for risk")
     elif load_clf.predict(df) >= 23 and load_clf.predict(df)<=28:
-           st.write("Average/moderate tolerance for risk")
+           st.subheader("Average/moderate tolerance for risk")
     elif load_clf.predict(df) >= 29 and load_clf.predict(df)<=32:
-           st.write("Above-average tolerance for risk")         
+           st.subheader("Above-average tolerance for risk")         
     else:
         st.write("High tolerance for risk")
         
