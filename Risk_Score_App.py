@@ -67,7 +67,7 @@ with st.beta_expander("Quesiton"):
     st.subheader('Age: Bạn bao nhiêu tuổi rồi ?')
     st.markdown('  A. <18 tuổi')
     st.markdown('  B. 18-25 tuổi')
-    st.markdown('  C. <18 tuổi')
+    st.markdown('  C. >25 tuổi')
 
     st.subheader('Gender: Giới tính của bạn ?')
     st.markdown('  A. Nam')
