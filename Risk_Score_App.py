@@ -102,7 +102,7 @@ st.markdown('  B. Đầu tư.')
 st.markdown('  C. Khác.')
 
 
-st.subheader('---')
+st.write('---')
 st.header('User Input features')
 
 
@@ -122,7 +122,7 @@ st.write('---')
 
 st.header('Prediction of Risk Tolerance Score')
 st.subheader(prediction)
-st.subheader('---')
+st.write('---')
 
 def classify(prediction):
     if load_clf.predict(df) <= 18:
