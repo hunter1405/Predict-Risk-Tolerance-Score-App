@@ -16,7 +16,7 @@ Data obtained from **UEL-ers** in Python by ***Group 35***.
 
 st.image(
     "https://www.plan-wisely.com/wp-content/uploads/sites/2/2020/07/Risk.png",
-    width=500,
+    width=700,
 )
 
 st.sidebar.subheader('User Input Features')
