@@ -170,8 +170,8 @@ else:
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
-  st.write("hello world")
-  st.image("https://cdn5.vectorstock.com/i/1000x1000/23/94/modern-logo-concept-design-for-fintech-vector-19842394.jpg", width = 150)
-  st.write("bye world")
+    st.write("hello world")
+    st.image("https://cdn5.vectorstock.com/i/1000x1000/23/94/modern-logo-concept-design-for-fintech-vector-19842394.jpg", width = 150)
+    st.write("bye world")
 
 st.markdown('---')
