@@ -129,12 +129,16 @@ with st.beta_expander("Questions for Risk Tolerance prediction"):
     st.markdown('  C. Khác.')
 
 with st.beta_expander("Levels"):
+    st.image(
+    "https://img.etimg.com/photo/49085549.cms",
+    width=700,
+)
     st.subheader('Score:  0 – 18')
-    st.markdown(' Low tolerance for risk')
+    st.markdown(' Conservative tolerance for risk')
     st.subheader('Score:  19 – 32')
     st.markdown(' Average/moderate tolerance for risk')
     st.subheader('Score:  33 – 47')
-    st.markdown(' High tolerance for risk ')
+    st.markdown(' Aggressive tolerance for risk')
 
 # Reads in saved classification model
 load_clf = pickle.load(open('model.pkl', 'rb'))
@@ -148,11 +152,11 @@ st.markdown('---')
 
 def classify(prediction):
     if load_clf.predict(df) <= 18:
-        st.subheader("Low tolerance for risk")
+        st.subheader("Conservative tolerance for risk")
     elif load_clf.predict(df) >= 19 and load_clf.predict(df)<=32:
         st.subheader("Average/moderate tolerance for risk")     
     else:
-        st.write("High tolerance for risk")
+        st.write(" Aggressive tolerance for risk")
         
 st.header('Level')
 classify(prediction)
