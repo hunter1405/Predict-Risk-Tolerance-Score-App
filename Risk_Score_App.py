@@ -76,11 +76,7 @@ with st.expander("Levels"):
     st.markdown(' Aggressive tolerance for risk')
 
 # Collects user input features into dataframe
-uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
-if uploaded_file is not None:
-    input_df = pd.read_csv(uploaded_file)
-else:
-    def user_input_features():
+def user_input_features():
         st.header('Please fill-in all required information in Vietnamese')
         st.subheader('Bạn bao nhiêu tuổi rồi ?')
         Age = st.radio('',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
@@ -121,7 +117,7 @@ else:
                 'Objective': Objective.split('.')[0]}
         features = pd.DataFrame(data, index=[0])
         return features
-    input_df = user_input_features()
+input_df = user_input_features()
 
 # Combines user input features with entire penguins dataset
 # This will be useful for the encoding phase
