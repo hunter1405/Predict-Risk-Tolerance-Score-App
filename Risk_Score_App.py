@@ -11,14 +11,18 @@ st.image(
 
 st.write("""
 # Risk Tolerance Score Prediction App
-This app predicts the **Risk Tolerance** score!
-Data obtained from **UEL-ers** in Python by ***Group 35***.
+This app uses ML model to predict the **Risk Tolerance** score!
+Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with more than 500 responses of partipants in Ho Chi Minh City.
+""")
+
+st.write("""
+# The algorithm (KNN Regression) is built with a **Mean absolute error** of approximately ***960***.
 """)
 
 #st.image("https://www.plan-wisely.com/wp-content/uploads/sites/2/2020/07/Risk.png",
 #    width=700,)
 image = Image.open('NGHIÊN CỨU KHOA HỌC (1).png')
-st.image(image, caption='Group 35', width=700)
+st.image(image, caption='Members of Group 35', width=700)
 
 st.sidebar.subheader('User Input Features')
 
