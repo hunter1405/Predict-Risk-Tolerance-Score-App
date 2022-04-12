@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+from PIL import Image
 
 st.image(
     "https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png",
@@ -14,10 +15,10 @@ This app predicts the **Risk Tolerance** score!
 Data obtained from **UEL-ers** in Python by ***Group 35***.
 """)
 
-st.image(
-    "https://www.plan-wisely.com/wp-content/uploads/sites/2/2020/07/Risk.png",
-    width=700,
-)
+#st.image("https://www.plan-wisely.com/wp-content/uploads/sites/2/2020/07/Risk.png",
+#    width=700,)
+image = Image.open('NGHIÊN CỨU KHOA HỌC (1).png')
+st.image(image, caption='Group 35')
 
 st.sidebar.subheader('User Input Features')
 
