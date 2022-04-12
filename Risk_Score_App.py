@@ -11,7 +11,7 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3498DB;">
   <a class="navbar-brand" href="https://www.uel.edu.vn" target="_blank">
-  <img class="image-25"src="https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20Logo%20Vietnamese%20name%20beside.png" width="100"
+  <img class="image-25"src="https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20Logo%20Vietnamese%20name%20beside.png" width="300"
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -171,7 +171,7 @@ with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
     st.write("hello world")
-    st.image("https://cdn5.vectorstock.com/i/1000x1000/23/94/modern-logo-concept-design-for-fintech-vector-19842394.jpg", width = 150)
+    st.image("https://cdn5.vectorstock.com/i/1000x1000/23/94/modern-logo-concept-design-for-fintech-vector-19842394.jpg", width = 500)
     st.write("bye world")
 
 st.markdown('---')
