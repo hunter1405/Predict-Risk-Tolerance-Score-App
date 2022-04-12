@@ -15,9 +15,12 @@ body {
 }
 </style>""", unsafe_allow_html=True)
 
-n =.stTextInput>div>div>input {
+n = st.markdown("""
+<style>
+div.stTextInput>div>div>input {
     color: #000000;
 }
+</style>""", unsafe_allow_html=True)
 
 st.image(
     "https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png",
