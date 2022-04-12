@@ -64,9 +64,11 @@ if uploaded_file is not None:
 else:
     def user_input_features():
         st.header('Please fill-in all required information in Vietnamese')
-        Age = st.selectbox('Bạn bao nhiêu tuổi rồi ?',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
+        st.subheader('Bạn bao nhiêu tuổi rồi ?')
+        Age = st.selectbox('Age',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
         st.write('You selected:', Age.split('.')[1])
-        Gender = st.selectbox('Giới tính của bạn ?',('A. Nam','B. Nữ'))
+        st.subheader('Giới tính của bạn ?')
+        Gender = st.selectbox('Gender',('A. Nam','B. Nữ'))
         st.write('You selected:', Gender.split('.')[1])
         Marital = st.selectbox('Tình trạng hôn nhân của bạn ?',('A. Độc thân\n(chưa kết hôn hoặc đã ly hôn)','B. Đã kết hôn'))
         st.write('You selected:', Marital.split('.')[1])
