@@ -62,7 +62,7 @@ if uploaded_file is not None:
     input_df = pd.read_csv(uploaded_file)
 else:
     def user_input_features():
-        st.header('Please fill-in all required information')
+        st.header('Please fill-in all required information in Vietnamese')
         Age = st.selectbox('Age: Bạn bao nhiêu tuổi rồi ?',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
         st.write('You selected:', Age)
         Gender = st.selectbox('Gender: Giới tính của bạn ?',('A. Nam','B. Nữ'))
