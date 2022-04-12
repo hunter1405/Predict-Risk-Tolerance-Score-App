@@ -126,6 +126,12 @@ load_clf = pickle.load(open('model.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = load_clf.predict(df)
+m = st.markdown("""
+<style>
+div.stButton > button:first-child {
+    background-color: rgb(204, 49, 49);
+}
+</style>""", unsafe_allow_html=True)
 if st.button("Submit this form"):
     st.header('Prediction of Risk Tolerance Score')
     st.info(prediction.round(decimals=1))
