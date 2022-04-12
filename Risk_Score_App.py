@@ -117,9 +117,9 @@ load_clf = pickle.load(open('model.pkl', 'rb'))
 # Apply model to make predictions
 prediction = load_clf.predict(df)
 
+st.markdown('---')
 st.header('Prediction of Risk Tolerance Score')
 st.info(prediction.round(decimals=1))
-st.markdown('---')
 
 def classify(prediction):
     if load_clf.predict(df) <= 18:
