@@ -3,8 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 from PIL import Image
-import requests
-from streamlit_lottie import st_lottie
+
 
 st.set_page_config(layout="wide")
 
@@ -31,9 +30,6 @@ st.markdown("""
   </div>
 </nav>
 """, unsafe_allow_html=True)
-
-img_lottie_animation = Image.open("images/yt_lottie_animation.png")
-
 
 h = st.markdown("""
 <style>
