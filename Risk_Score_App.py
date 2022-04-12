@@ -73,7 +73,7 @@ with st.beta_expander("What is Risk Tolerance?"):
     st.markdown('**Risk tolerance** is the degree of variability in investment returns that an investor is willing to withstand in their financial planning.')
     st.image(
     "https://www.tnex.com.vn/wp-content/uploads/2021/10/7s-01-800x400.png",
-    width=500,
+    width=700,
 )
     st.markdown('Risk tolerance is an important component in investing. You should have a realistic understanding of your ability and willingness to stomach large swings in the value of your investments; if you take on too much risk, you might panic and sell at the wrong time.')
    
