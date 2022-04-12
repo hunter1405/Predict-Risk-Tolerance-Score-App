@@ -8,19 +8,18 @@ st.set_page_config(layout="wide")
 
 h = st.markdown("""
 <style>
-body {
-    color: #fff;
-    background-color: #FDFEFE;
-    /* font-size: 40px; */
+div.fullScreenFrame > div {
+    display: flex;
+    justify-content: center;
 }
+
+div.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>""", unsafe_allow_html=True)
 
-n = st.markdown("""
-<style>
-div.stTextInput>div>div>input {
-    color: #2E86C1;
-}
-</style>""", unsafe_allow_html=True)
 
 st.image(
     "https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png",
