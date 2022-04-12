@@ -42,7 +42,8 @@ div.fullScreenFrame > div {
 
 st.image("https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png", width=100)
 
-original_title = '<p style="font-family:Copperplate; color:DarkBlue; font-size: 40px;">Risk Tolerance Score Prediction App</p>'
+#Title
+original_title = '<p style="font-family:Copperplate; color:D#1F618D; font-size: 40px;">Risk Tolerance Score Prediction App</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 # st.title("**Risk Tolerance Score Prediction App**")
 
