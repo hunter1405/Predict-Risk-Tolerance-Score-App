@@ -173,11 +173,11 @@ if st.button("Submit this form"):
    
     def reccomend(prediction):
         if load_clf.predict(df) <= 18:
-            st.info("For a Conservative level, we recommend an investment channel with low volatility, aiming at capital adequacy, and protecting capital from the impact of inflation. The preferable investment channel for you are: gold, savings, dollars.")
+            st.info("For a Conservative level, we recommend an investment channel with low volatility, aiming at capital adequacy, and protecting capital from the impact of inflation. The preferable investment channel for you are: gold, savings, dollars")
         elif load_clf.predict(df) >= 19 and load_clf.predict(df)<=32:
-            st.info("For a Average/moderate level, we recommend an investment channel with growth potential. The preferable investment channel for you is: stocks, real estate.")     
+            st.info("For a Average/moderate level, we recommend an investment channel with growth potential. The preferable investment channel for you is: stocks, real estate")     
         else:
-            st.info("For a Aggressive level, we recommend a high-risk investment channel with high volatility in the short, medium and long term. However, the return can be significantly higher than the inflation rate. The right investment channel for you is: stocks, commodity markets, money markets.") 
+            st.info("For a Aggressive level, we recommend a high-risk investment channel with high volatility in the short, medium and long term. However, the return can be significantly higher than the inflation rate. The right investment channel for you is: stocks, commodity markets, money markets") 
     st.header('Level')
     classify(prediction)
     st.header('Reccommendation')
