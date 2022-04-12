@@ -11,7 +11,7 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3498DB;">
-  <a class="navbar-brand" href="https://youtube.com/dataprofessor" target="_blank">UEL Fintech</a>
+  <a class="navbar-brand" href="https://www.uel.edu.vn" target="_blank">UEL Fintech</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,10 +21,16 @@ st.markdown("""
         <a class="nav-link disabled" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://youtube.com/dataprofessor" target="_blank">YouTube</a>
+        <a class="nav-link" href="https://www.facebook.com/nice.circle/" target="_blank">Hưng</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://twitter.com/thedataprof" target="_blank">Twitter</a>
+        <a class="nav-link" href="https://www.facebook.com/thinh.lam.9883739" target="_blank">Thịnh</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/kha.thaituan" target="_blank">Kha</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/tranthanhtruc.2k1" target="_blank">Trúc</a>
       </li>
     </ul>
   </div>
