@@ -131,7 +131,7 @@ with st.beta_expander("Questions for Risk Tolerance prediction"):
 with st.beta_expander("Levels"):
     st.image(
     "https://img.etimg.com/photo/49085549.cms",
-    width=700,
+    use_column_width=True,
 )
     st.subheader('Score:  0 – 18')
     st.markdown(' Conservative tolerance for risk')
