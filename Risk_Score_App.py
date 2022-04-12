@@ -34,7 +34,7 @@ else:
         Age = st.sidebar.selectbox('Age: Bạn bao nhiêu tuổi rồi ?',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
         Gender = st.sidebar.selectbox('Gender: Giới tính của bạn ?',('A. Nam','B. Nữ'))
         Marital = st.sidebar.selectbox('Marital: Tình trạng hôn nhân của bạn ?',('A. Độc thân (chưa kết hôn hoặc đã ly hôn)','B. Đã kết hôn'))
-        Income = st.sidebar.selectbox('Income: Thu nhập cá nhân hàng tháng của bạn nằm trong khoảng nào ?',('A','B','C'))
+        Income = st.sidebar.selectbox('Income: Thu nhập cá nhân hàng tháng của bạn nằm trong khoảng nào ?',('A. <3tr','B. 3tr-12tr','C. >12tr'))
         Ratio = st.sidebar.selectbox('Ratio: Bạn dành bao nhiêu phần trăm trong thu nhập để phục vụ cho mục đích đầu tư ?',('A. <3tr','B. 3tr-12tr','C. >12tr'))
         Education = st.sidebar.selectbox('Education: Trình độ học vấn của bạn ?',('A. Dưới đại học.','B. Đại học.','C. Sau đại học (thạc sĩ, tiến sĩ hoặc cao hơn).'))
         Profession = st.sidebar.selectbox('Profession: Bạn đánh giá về kiến thức trong đầu tư của bạn thế nào ?',('A. Không có/chưa có bất kỳ kinh nghiệm trong lĩnh vực đầu tư.','B. Có ít kiến thức trong đầu tư. Chủ yếu học hỏi qua sách báo, Internet.','C. Có nhiều kiến thức đầu tư, đã/đang hoạt động trong lĩnh vực liên quan đến đầu tư.'))
