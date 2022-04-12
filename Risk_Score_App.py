@@ -71,6 +71,10 @@ df = df[:1] # Selects only the first row (the user input data)
 st.write('---')
 with st.beta_expander("What is Risk Tolerance?"):
     st.markdown('**Risk tolerance** is the degree of variability in investment returns that an investor is willing to withstand in their financial planning.')
+    st.image(
+    "https://www.tnex.com.vn/wp-content/uploads/2021/10/7s-01-800x400.png",
+    width=100,
+)
     st.markdown('Risk tolerance is an important component in investing. You should have a realistic understanding of your ability and willingness to stomach large swings in the value of your investments; if you take on too much risk, you might panic and sell at the wrong time.')
    
 with st.beta_expander("Factors affecting the Risk Tolerance"):
@@ -128,16 +132,6 @@ with st.beta_expander("Levels"):
     st.subheader('Score:  33 – 47')
     st.markdown(' High tolerance for risk ')
 
-st.header('User Input features')
-
-
-
-if uploaded_file is not None:
-    st.write(df)
-else:
-    st.write('Awaiting CSV file to be uploaded. Currently using example input parameters (shown below).')
-    st.write(df)
-st.markdown('---')
 # Reads in saved classification model
 load_clf = pickle.load(open('model.pkl', 'rb'))
 
