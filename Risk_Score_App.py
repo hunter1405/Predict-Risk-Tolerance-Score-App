@@ -77,7 +77,7 @@ else:
         Income = st.selectbox(' ',('A. <3tr','B. 3tr-12tr','C. >12tr'))
         st.write('You selected:', Income.split('.')[1])
         st.subheader('Bạn dành bao nhiêu phần trăm trong thu nhập để phục vụ cho mục đích đầu tư ?')
-        Ratio = st.selectbox(' ',('A. <3tr','B. 3tr-12tr','C. >12tr'))
+        Ratio = st.selectbox(' ',('A. A. <20%','B. 20%-50%','C. >50%'))
         st.write('You selected:', Ratio.split('.')[1])
         st.subheader('Trình độ học vấn của bạn ?')
         Education = st.selectbox(' ',('A. Dưới đại học.','B. Đại học.','C. Sau đại học\n(thạc sĩ, tiến sĩ hoặc cao hơn).'))
