@@ -72,7 +72,27 @@ st.write('---')
 with st.beta_expander("What is Risk Tolerance?"):
     st.markdown('**Risk tolerance** is the degree of variability in investment returns that an investor is willing to withstand in their financial planning.')
     st.markdown('Risk tolerance is an important component in investing. You should have a realistic understanding of your ability and willingness to stomach large swings in the value of your investments; if you take on too much risk, you might panic and sell at the wrong time.')
+    st.markdown('It looks at how much market risk—stock volatility, stock market swings, economic or political events, regulatory, or interest rate changes—an investor can tolerate, considering that all of these factors might cause their portfolio to slide.')
+    st.markdown("A person's age, investment goals, income, and comfort level all play into determining their risk tolerance.")
    
+with st.beta_expander("Factors affecting the Risk Tolerance"):
+    st.subheader('Age')
+    st.markdown(' Low tolerance for risk')
+    st.subheader('Gender')
+    st.markdown(' Average/moderate tolerance for risk')
+    st.subheader('Marital Status')
+    st.markdown(' High tolerance for risk ')
+    st.subheader('Income')
+    st.markdown(' High tolerance for risk ')
+    st.subheader('Education')
+    st.markdown(' High tolerance for risk ')
+    st.subheader('Profession')
+    st.markdown(' High tolerance for risk ')
+    st.subheader('Optimism')
+    st.markdown(' High tolerance for risk ')
+    st.subheader('Source')
+    st.markdown(' High tolerance for risk ')
+    
 with st.beta_expander("Questions for Risk Tolerance prediction"):
     st.subheader('Age: Bạn bao nhiêu tuổi rồi ?')
     st.markdown('  A. <18 tuổi')
