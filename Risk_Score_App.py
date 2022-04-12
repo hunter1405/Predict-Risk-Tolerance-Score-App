@@ -33,13 +33,9 @@ div.fullScreenFrame > div {
 
 l = st.markdown("""
 <style>
-div.row-widget.stRadio > div {
-    flex-direction: row;
-    align-items: stretch;
-}
 
 div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > div:first-child {
-    background-color: blue;
+    background-color: #3498db;
 }
 </style>""", unsafe_allow_html=True)
 
