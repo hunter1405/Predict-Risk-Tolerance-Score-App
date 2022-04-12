@@ -31,24 +31,24 @@ if uploaded_file is not None:
     input_df = pd.read_csv(uploaded_file)
 else:
     def user_input_features():
-        Age = st.sidebar.selectbox('Age',('A: 19 tuổi','B: 20 tuổi','C: 21 tuổi'))
-        Gender = st.sidebar.selectbox('Gender',('A','B'))
-        Marital = st.sidebar.selectbox('Marital',('A','B'))
-        Income = st.sidebar.selectbox('Income',('A','B','C'))
-        Ratio = st.sidebar.selectbox('Ratio',('A','B','C'))
-        Education = st.sidebar.selectbox('Education',('A','B','C'))
-        Profession = st.sidebar.selectbox('Profession',('A','B','C'))
-        Optimism = st.sidebar.selectbox('Optimism',('A','B'))
-        Objective = st.sidebar.selectbox('Source',('A','B','C'))
-        data = {'Age': Age.split(':')[0],
-                'Gender': Gender,
-                'Marital': Marital,
-                'Income': Income,
-                'Ratio': Ratio,
-                'Education': Education,
-                'Profession': Profession,
-                'Optimism': Optimism,
-                'Objective': Objective}
+        Age = st.sidebar.selectbox('Age: Bạn bao nhiêu tuổi rồi ?',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
+        Gender = st.sidebar.selectbox('Gender: Giới tính của bạn ?',('A. Nam','B. Nữ'))
+        Marital = st.sidebar.selectbox('Marital: Tình trạng hôn nhân của bạn ?',('A. Độc thân (chưa kết hôn hoặc đã ly hôn)','B. Đã kết hôn'))
+        Income = st.sidebar.selectbox('Income: Thu nhập cá nhân hàng tháng của bạn nằm trong khoảng nào ?',('A','B','C'))
+        Ratio = st.sidebar.selectbox('Ratio: Bạn dành bao nhiêu phần trăm trong thu nhập để phục vụ cho mục đích đầu tư ?',('A. <3tr','B. 3tr-12tr','C. >12tr'))
+        Education = st.sidebar.selectbox('Education: Trình độ học vấn của bạn ?',('A. Dưới đại học.','B. Đại học.','C. Sau đại học (thạc sĩ, tiến sĩ hoặc cao hơn).'))
+        Profession = st.sidebar.selectbox('Profession: Bạn đánh giá về kiến thức trong đầu tư của bạn thế nào ?',('A. Không có/chưa có bất kỳ kinh nghiệm trong lĩnh vực đầu tư.','B. Có ít kiến thức trong đầu tư. Chủ yếu học hỏi qua sách báo, Internet.','C. Có nhiều kiến thức đầu tư, đã/đang hoạt động trong lĩnh vực liên quan đến đầu tư.'))
+        Optimism = st.sidebar.selectbox('Optimism: Bạn mong muốn mình sẽ là trường hợp nào trong 2 trường hợp sau ?',('A. Lợi suất nhận được từ các khoản đầu tư cao hơn ngân hàng một chút, ổn định.','B. Lợi suất nhận được từ các khoản đầu tư có thể lỗ nhiều hoặc lãi nhiều, không ổn định.'))
+        Objective = st.sidebar.selectbox('Source: Nguồn thu nhập chính của bạn là gì ?',('A. Lương công việc chính.','B. Đầu tư.','C. Khác.'))
+        data = {'Age': Age.split('.')[0],
+                'Gender': Gender.split('.')[0],
+                'Marital': Marital.split('.')[0],
+                'Income': Income.split('.')[0],
+                'Ratio': Ratio.split('.')[0],
+                'Education': Education.split('.')[0],
+                'Profession': Profession.split('.')[0],
+                'Optimism': Optimism.split('.')[0],
+                'Objective': Objective.split('.')[0]}
         features = pd.DataFrame(data, index=[0])
         return features
     input_df = user_input_features()
