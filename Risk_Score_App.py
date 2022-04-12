@@ -47,7 +47,7 @@ with col1:
     st.write(' ')
 with col2:
     image = Image.open('NGHIÊN CỨU KHOA HỌC (1).png')
-    st.image(image, caption='Members of Group 35', width=800)
+    st.image(image, caption='Members of Group 35')
 with col3:
     st.write(' ')
     
