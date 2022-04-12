@@ -79,7 +79,7 @@ else:
         st.write('You selected:', Profession.split('.')[1])
         Optimism = st.selectbox('Optimism: Bạn mong muốn mình sẽ là trường hợp nào trong 2 trường hợp sau ?',('A. Lợi suất nhận được từ các\nkhoản đầu tư cao hơn ngân hàng một chút, ổn định.','B. Lợi suất nhận được từ các\nkhoản đầu tư có thể lỗ nhiều hoặc lãi nhiều, không ổn định.'))
         st.write('You selected:', Optimism.split('.')[1])
-        Objective = st.selectbox('Source: Nguồn thu nhập chính của bạn là gì ?',('A. Lương công việc chính.**','B. Đầu tư.','C. Khác.'))
+        Objective = st.selectbox('Source: Nguồn thu nhập chính của bạn là gì ?',('A. Lương công việc chính.','B. Đầu tư.','C. Khác.'))
         st.write('You selected:', Objective.split('.')[1])
             
         data = {'Age': Age.split('.')[0],
