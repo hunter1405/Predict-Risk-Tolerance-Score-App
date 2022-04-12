@@ -52,7 +52,7 @@ Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with mo
  #  st.write('   ')
   
 background = Image.open("NGHIÊN CỨU KHOA HỌC (1).png")
-col1, col2, col3 = st.columns([0.4, 4, 0.4])
+col1, col2, col3 = st.columns([0.5, 3, 0.5])
 col2.image(background, use_column_width=True)
     
 st.write('---')
