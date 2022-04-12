@@ -44,9 +44,8 @@ st.image(
     "https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png",
     width=100,
 )
-st.write("""
-# Risk Tolerance Score Prediction App
-This app uses ML model to predict the **Risk Tolerance** score!
+st.title("Risk Tolerance Score Prediction App")
+st.write("""This app uses ML model to predict the **Risk Tolerance** score!
 Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with more than 500 responses of participants in Ho Chi Minh City.
 """)
 
