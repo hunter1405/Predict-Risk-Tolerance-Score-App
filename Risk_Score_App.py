@@ -31,7 +31,7 @@ if uploaded_file is not None:
     input_df = pd.read_csv(uploaded_file)
 else:
     def user_input_features():
-        Age = st.sidebar.selectbox('Age',('A','B','C'))
+        Age = st.sidebar.selectbox('Age',('A: 19 tuổi','B: 20 tuổi','C: 21 tuổi'))
         Gender = st.sidebar.selectbox('Gender',('A','B'))
         Marital = st.sidebar.selectbox('Marital',('A','B'))
         Income = st.sidebar.selectbox('Income',('A','B','C'))
@@ -40,7 +40,7 @@ else:
         Profession = st.sidebar.selectbox('Profession',('A','B','C'))
         Optimism = st.sidebar.selectbox('Optimism',('A','B'))
         Objective = st.sidebar.selectbox('Source',('A','B','C'))
-        data = {'Age': Age,
+        data = {'Age': Age.split(':')[0],
                 'Gender': Gender,
                 'Marital': Marital,
                 'Income': Income,
