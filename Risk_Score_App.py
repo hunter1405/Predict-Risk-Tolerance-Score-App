@@ -32,7 +32,7 @@ div.fullScreenFrame > div {
 </style>""", unsafe_allow_html=True)
 
 #Title
-original_title = '<p style="font-family:sans-serif; color:#2E86C1; text-shadow: 2px 2px 4px #000000; font-size: 50px;">Risk Tolerance Score Prediction App</p>'
+original_title = '<p style="font-family:sans-serif; color:#3498DB; text-shadow: 2px 2px 4px #000000; font-size: 50px;">Risk Tolerance Score Prediction App</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 # st.title("**Risk Tolerance Score Prediction App**")
 
@@ -166,12 +166,5 @@ else:
     st.info("Missing information")
     st.header('Level')
     st.info("Missing information")
-
-with open("style.css") as f:
-    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-
-    st.write("hello world")
-    st.image("https://cdn5.vectorstock.com/i/1000x1000/23/94/modern-logo-concept-design-for-fintech-vector-19842394.jpg", width = 500)
-    st.write("bye world")
 
 st.markdown('---')
