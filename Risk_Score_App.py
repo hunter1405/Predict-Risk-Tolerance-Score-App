@@ -5,7 +5,6 @@ import pickle
 from PIL import Image
 import requests
 from streamlit_lottie import st_lottie
-pip install streamlit-lottie
 
 st.set_page_config(layout="wide")
 
