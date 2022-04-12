@@ -31,6 +31,18 @@ div.fullScreenFrame > div {
 }
 </style>""", unsafe_allow_html=True)
 
+l = st.markdown("""
+<style>
+div.row-widget.stRadio > div {
+    flex-direction: row;
+    align-items: stretch;
+}
+
+div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > div:first-child {
+    background-color: blue;
+}
+</style>""", unsafe_allow_html=True)
+
 #Title
 original_title = '<p style="text-align: center; color:#3498DB; text-shadow: 2px 2px 4px #000000; font-size: 50px;">Risk Tolerance Score Prediction App</p>'
 st.markdown(original_title, unsafe_allow_html=True)
