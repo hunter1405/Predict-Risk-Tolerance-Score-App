@@ -74,7 +74,7 @@ else:
         Ratio = st.selectbox('Ratio: Bạn dành bao nhiêu phần trăm trong thu nhập để phục vụ cho mục đích đầu tư ?',('A. <3tr','B. 3tr-12tr','C. >12tr'))
         st.write('You selected:', Ratio.split('.')[1])
         Education = st.selectbox('Education: Trình độ học vấn của bạn ?',('A. Dưới đại học.','B. Đại học.','C. Sau đại học\n(thạc sĩ, tiến sĩ hoặc cao hơn).'))
-        st.write('You selected:', Education)
+        st.write('You selected:', Education.split('.')[1])
         Profession = st.selectbox('Profession: Bạn đánh giá về kiến thức trong đầu tư của bạn thế nào ?',('A. Không có/chưa có bất kỳ kinh\nnghiệm trong lĩnh vực đầu tư.','B. Có ít kiến thức trong đầu tư.\nChủ yếu học hỏi qua sách báo, Internet.','C. Có nhiều kiến thức đầu tư,\nđã/đang hoạt động trong lĩnh vực liên quan đến đầu tư.'))
         st.write('You selected:', Profession.split('.')[1])
         Optimism = st.selectbox('Optimism: Bạn mong muốn mình sẽ là trường hợp nào trong 2 trường hợp sau ?',('A. Lợi suất nhận được từ các\nkhoản đầu tư cao hơn ngân hàng một chút, ổn định.','B. Lợi suất nhận được từ các\nkhoản đầu tư có thể lỗ nhiều hoặc lãi nhiều, không ổn định.'))
