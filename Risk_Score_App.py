@@ -10,7 +10,7 @@ h = st.markdown("""
 <style>
 body {
     color: #fff;
-    background-color: #D4E6F1;
+    background-color: #FDFEFE;
     /* font-size: 40px; */
 }
 </style>""", unsafe_allow_html=True)
