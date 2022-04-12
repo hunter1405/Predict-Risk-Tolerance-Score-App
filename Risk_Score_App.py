@@ -49,7 +49,7 @@ with col2:
     image = Image.open('NGHIÊN CỨU KHOA HỌC (1).png')
     st.image(image, caption='Members of Group 35',width = 600)
 with col3:
-    st.write(' ')
+    st.write('  ')
     
 st.write('---')
 
