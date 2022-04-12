@@ -170,6 +170,7 @@ if st.button("Submit this form"):
             st.info("Average/moderate tolerance for risk")     
         else:
             st.info(" Aggressive tolerance for risk")
+   
     def reccomend(prediction):
         if load_clf.predict(df) <= 18:
             st.info("For a Conservative level, we recommend an investment channel with low volatility, aiming at capital adequacy, and protecting capital from the impact of inflation. The preferable investment channel for you are: gold, savings, dollars.")
@@ -181,6 +182,7 @@ if st.button("Submit this form"):
     classify(prediction)
     st.header('Reccommendation')
     reccomend(prediction)
+
 else:
     st.header('Prediction of Risk Tolerance Score')
     st.info("Missing information")
