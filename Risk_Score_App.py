@@ -4,7 +4,6 @@ import numpy as np
 import pickle
 from PIL import Image
 
-
 st.set_page_config(page_title='Risk Tolerance Prediction',page_icon="🇺 🇪 🇱",layout="wide")
 
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
@@ -12,7 +11,7 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3498DB;">
   <a class="navbar-brand" href="https://www.uel.edu.vn" target="_blank">
-  <img class="image-25"src="https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png" width="70"
+  <img class="image-25"src="https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20Logo%20Vietnamese%20name%20beside.png" width="70"
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -167,5 +166,15 @@ else:
     st.info("Missing information")
     st.header('Level')
     st.info("Missing information")
-    
+
+with open("style.css") as f:
+    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+
+path = "https://cdn5.vectorstock.com/i/1000x1000/23/94/modern-logo-concept-design-for-fintech-vector-19842394.jpg"
+image = Image.open(path)
+
+st.write("hello world")
+st.image(image, width = 150)
+st.write("bye world")
+
 st.markdown('---')
