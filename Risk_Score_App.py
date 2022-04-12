@@ -18,7 +18,7 @@ body {
 n = st.markdown("""
 <style>
 div.stTextInput>div>div>input {
-    color: #000000;
+    color: #2E86C1;
 }
 </style>""", unsafe_allow_html=True)
 
