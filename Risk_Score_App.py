@@ -40,18 +40,14 @@ div.fullScreenFrame > div {
 </style>""", unsafe_allow_html=True)
 
 
-st.image(
-    "https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png",
-    width=100,
-)
+st.image("https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png", width=100)
 
-original_title = '<p style="font-family:Courier; color:Blue; font-size: 50px;">Risk Tolerance Score Prediction App</p>'
+original_title = '<p style="font-family:Copperplate; color:Navy; font-size: 40px;">Risk Tolerance Score Prediction App</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 # st.title("**Risk Tolerance Score Prediction App**")
 
 st.write("""This app uses ML model to predict the **Risk Tolerance** score!
-Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with more than 500 responses of participants in Ho Chi Minh City.
-""")
+Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with more than 500 responses of participants in Ho Chi Minh City.""")
 
 #st.image("https://www.plan-wisely.com/wp-content/uploads/sites/2/2020/07/Risk.png",
 #    width=700,)
