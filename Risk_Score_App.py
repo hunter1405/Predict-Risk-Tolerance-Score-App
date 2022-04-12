@@ -63,7 +63,7 @@ st.sidebar.markdown("""
 st.write('---')
 
 # Display definition in layout 
-with st.beta_expander("What is Risk Tolerance?"):
+with st.expander("What is Risk Tolerance?"):
     st.markdown('**Risk tolerance** is the degree of variability in investment returns that an investor is willing to withstand in their financial planning.')
     st.image(
     "https://www.tnex.com.vn/wp-content/uploads/2021/10/7s-01-800x400.png",
@@ -71,7 +71,7 @@ with st.beta_expander("What is Risk Tolerance?"):
 )
     st.markdown('Risk tolerance is an important component in investing. You should have a realistic understanding of your ability and willingness to stomach large swings in the value of your investments; if you take on too much risk, you might panic and sell at the wrong time.')
    
-with st.beta_expander("Factors affecting the Risk Tolerance"):
+with st.expander("Factors affecting the Risk Tolerance"):
     st.markdown('It looks at how much market risk—stock volatility, stock market swings, economic or political events, regulatory, or interest rate changes—an investor can tolerate, considering that all of these factors might cause their portfolio to slide.')
     st.image(
     "https://cdn.sketchbubble.com/pub/media/catalog/product/optimized1/c/1/c11a79860b06dd7be52599bdc8aa0c8a56b4c90521c8a7ef15aac3b291a8794f/risk-tolerance-slide3.png",
@@ -79,7 +79,7 @@ with st.beta_expander("Factors affecting the Risk Tolerance"):
 )
     st.markdown("A person's age, investment goals, income, and comfort level all play into determining their risk tolerance.")
         
-with st.beta_expander("Levels"):
+with st.expander("Levels"):
     st.image(
     "https://img.etimg.com/photo/49085549.cms",
     width=500,clamp = True,
