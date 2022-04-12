@@ -8,7 +8,6 @@ st.image(
     "https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png",
     width=100,
 )
-
 st.write("""
 # Risk Tolerance Score Prediction App
 This app uses ML model to predict the **Risk Tolerance** score!
@@ -69,6 +68,7 @@ for col in encode:
 df = df[:1] # Selects only the first row (the user input data)
 
 # Displays the user input features
+st.write('---')
 with st.beta_expander("What is Risk Tolerance?"):
     st.markdown('**Risk tolerance** is the degree of variability in investment returns that an investor is willing to withstand in their financial planning.')
     st.markdown('Risk tolerance is an important component in investing. You should have a realistic understanding of your ability and willingness to stomach large swings in the value of your investments; if you take on too much risk, you might panic and sell at the wrong time.')
@@ -124,7 +124,6 @@ with st.beta_expander("Levels"):
     st.subheader('Score:  33 – 47')
     st.markdown(' High tolerance for risk ')
 
-st.markdown('---')
 st.header('User Input features')
 
 
