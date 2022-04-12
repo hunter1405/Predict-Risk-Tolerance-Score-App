@@ -73,7 +73,7 @@ with st.beta_expander("What is Risk Tolerance?"):
     st.markdown('**Risk tolerance** is the degree of variability in investment returns that an investor is willing to withstand in their financial planning.')
     st.markdown('Risk tolerance is an important component in investing. You should have a realistic understanding of your ability and willingness to stomach large swings in the value of your investments; if you take on too much risk, you might panic and sell at the wrong time.')
    
-with st.beta_expander("Quesiton"):
+with st.beta_expander("Questions for Risk Tolerance prediction"):
     st.subheader('Age: Bạn bao nhiêu tuổi rồi ?')
     st.markdown('  A. <18 tuổi')
     st.markdown('  B. 18-25 tuổi')
