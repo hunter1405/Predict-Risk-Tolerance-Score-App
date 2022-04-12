@@ -11,7 +11,9 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3498DB;">
-  <a class="navbar-brand" href="https://www.uel.edu.vn" target="_blank">UEL Fintech</a>
+  <a class="navbar-brand" href="https://www.uel.edu.vn" target="_blank">
+  <img class="image-25"src="https://uploads-ssl.webflow.com/612b7de9c64ea455b27fc10e/616919bc9e21501c9567dfb1_AIESEC%20Logo.png" width="250" alt sizes="(max-width: 479px) 90vw, 250px"height="35"
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
