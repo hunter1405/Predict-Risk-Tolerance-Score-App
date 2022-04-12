@@ -128,8 +128,12 @@ load_clf = pickle.load(open('model.pkl', 'rb'))
 prediction = load_clf.predict(df)
 m = st.markdown("""
 <style>
-div.stButton > button:first-child {
-    background-color: rgb(204, 49, 49);
+div.stButton > button:first-child { 
+color: #4F8BF9;
+border-radius: 20%;
+backgroud-color: #00ff00;
+height: 3em;
+width: 3em; 
 }
 </style>""", unsafe_allow_html=True)
 if st.button("Submit this form"):
