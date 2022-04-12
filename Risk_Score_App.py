@@ -130,7 +130,7 @@ if st.button("Submit this form"):
 
     st.header('Level')
     classify(prediction)
-  else:
+else:
     st.header('Prediction of Risk Tolerance Score')
     st.info("Missing information")
     st.header('Level')
