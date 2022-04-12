@@ -147,7 +147,7 @@ load_clf = pickle.load(open('model.pkl', 'rb'))
 prediction = load_clf.predict(df)
 
 st.header('Prediction of Risk Tolerance Score')
-st.subheader(prediction.round())
+st.subheader(prediction.round(decimals=1))
 st.markdown('---')
 
 def classify(prediction):
