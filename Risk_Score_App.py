@@ -116,19 +116,18 @@ load_clf = pickle.load(open('model.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = load_clf.predict(df)
+if st.buttion("Apply"):
+    st.header('Prediction of Risk Tolerance Score')
+    st.info(prediction.round(decimals=1))
 
-st.markdown('---')
-st.header('Prediction of Risk Tolerance Score')
-st.info(prediction.round(decimals=1))
+    def classify(prediction):
+        if load_clf.predict(df) <= 18:
+            st.info("Conservative tolerance for risk")
+        elif load_clf.predict(df) >= 19 and load_clf.predict(df)<=32:
+            st.info("Average/moderate tolerance for risk")     
+        else:
+            st.info(" Aggressive tolerance for risk")
 
-def classify(prediction):
-    if load_clf.predict(df) <= 18:
-        st.info("Conservative tolerance for risk")
-    elif load_clf.predict(df) >= 19 and load_clf.predict(df)<=32:
-        st.info("Average/moderate tolerance for risk")     
-    else:
-        st.info(" Aggressive tolerance for risk")
-        
-st.header('Level')
-classify(prediction)
+    st.header('Level')
+    classify(prediction)
 st.markdown('---')
