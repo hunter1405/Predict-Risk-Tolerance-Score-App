@@ -4,6 +4,7 @@ import numpy as np
 import pickle
 from PIL import Image
 
+st.set_page_config(layout="wide")
 
 st.image(
     "https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png",
