@@ -4,6 +4,9 @@ import numpy as np
 import pickle
 from PIL import Image
 import requests
+import (
+  "https://github.com/andfanilo/streamlit-lottie"
+)
 
 st.set_page_config(layout="wide")
 
