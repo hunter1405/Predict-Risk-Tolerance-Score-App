@@ -4,6 +4,7 @@ import numpy as np
 import pickle
 from PIL import Image
 import requests
+from streamlit_lottie import st_lottie
 
 st.set_page_config(layout="wide")
 
