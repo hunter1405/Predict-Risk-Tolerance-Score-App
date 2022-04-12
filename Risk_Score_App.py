@@ -16,7 +16,7 @@ Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with mo
 """)
 
 st.write("""
-# The algorithm (KNN Regression) is built with a **Mean absolute error** of approximately ***960***.
+The algorithm (KNN Regression) is built with a **Mean absolute error** of approximately ***960***.
 """)
 
 #st.image("https://www.plan-wisely.com/wp-content/uploads/sites/2/2020/07/Risk.png",
