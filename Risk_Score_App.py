@@ -18,18 +18,6 @@ st.markdown("""
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.facebook.com/nice.circle/" target="_blank">Hưng</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.facebook.com/thinh.lam.9883739" target="_blank">Thịnh</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.facebook.com/kha.thaituan" target="_blank">Kha</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.facebook.com/tranthanhtruc.2k1" target="_blank">Trúc</a>
       </li>
     </ul>
   </div>
