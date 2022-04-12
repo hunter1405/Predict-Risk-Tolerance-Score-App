@@ -80,7 +80,11 @@ with st.beta_expander("What is Risk Tolerance?"):
 with st.beta_expander("Factors affecting the Risk Tolerance"):
     st.markdown('It looks at how much market risk—stock volatility, stock market swings, economic or political events, regulatory, or interest rate changes—an investor can tolerate, considering that all of these factors might cause their portfolio to slide.')
     st.markdown("A person's age, investment goals, income, and comfort level all play into determining their risk tolerance.")
-    
+        st.image(
+    "https://cdn.sketchbubble.com/pub/media/catalog/product/optimized1/c/1/c11a79860b06dd7be52599bdc8aa0c8a56b4c90521c8a7ef15aac3b291a8794f/risk-tolerance-slide3.png",
+    width=700,
+)
+        
 with st.beta_expander("Questions for Risk Tolerance prediction"):
     st.subheader('Age: Bạn bao nhiêu tuổi rồi ?')
     st.markdown('  A. <18 tuổi')
