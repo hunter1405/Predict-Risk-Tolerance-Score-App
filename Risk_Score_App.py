@@ -25,6 +25,36 @@ st.sidebar.subheader('User Input Features')
 st.sidebar.markdown("""
 [Example CSV input file](https://docs.google.com/spreadsheets/d/192iJyTBJWstQ3ReTLvqMUXBSemrfJLuFHJSzwb_6rU0/edit?usp=sharing)
 """)
+st.write('---')
+
+# Display definition in layout 
+with st.beta_expander("What is Risk Tolerance?"):
+    st.markdown('**Risk tolerance** is the degree of variability in investment returns that an investor is willing to withstand in their financial planning.')
+    st.image(
+    "https://www.tnex.com.vn/wp-content/uploads/2021/10/7s-01-800x400.png",
+    width=700,
+)
+    st.markdown('Risk tolerance is an important component in investing. You should have a realistic understanding of your ability and willingness to stomach large swings in the value of your investments; if you take on too much risk, you might panic and sell at the wrong time.')
+   
+with st.beta_expander("Factors affecting the Risk Tolerance"):
+    st.markdown('It looks at how much market risk—stock volatility, stock market swings, economic or political events, regulatory, or interest rate changes—an investor can tolerate, considering that all of these factors might cause their portfolio to slide.')
+    st.image(
+    "https://cdn.sketchbubble.com/pub/media/catalog/product/optimized1/c/1/c11a79860b06dd7be52599bdc8aa0c8a56b4c90521c8a7ef15aac3b291a8794f/risk-tolerance-slide3.png",
+    width=700,
+)
+    st.markdown("A person's age, investment goals, income, and comfort level all play into determining their risk tolerance.")
+        
+with st.beta_expander("Levels"):
+    st.image(
+    "https://img.etimg.com/photo/49085549.cms",
+    width=500,clamp = True,
+)
+    st.subheader('Score:  0 – 18')
+    st.markdown(' Conservative tolerance for risk')
+    st.subheader('Score:  19 – 32')
+    st.markdown(' Average/moderate tolerance for risk')
+    st.subheader('Score:  33 – 47')
+    st.markdown(' Aggressive tolerance for risk')
 
 # Collects user input features into dataframe
 uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
@@ -77,80 +107,9 @@ for col in encode:
     del df[col]
 df = df[:1] # Selects only the first row (the user input data)
 
-# Displays the user input features
-st.write('---')
-with st.beta_expander("What is Risk Tolerance?"):
-    st.markdown('**Risk tolerance** is the degree of variability in investment returns that an investor is willing to withstand in their financial planning.')
-    st.image(
-    "https://www.tnex.com.vn/wp-content/uploads/2021/10/7s-01-800x400.png",
-    width=700,
-)
-    st.markdown('Risk tolerance is an important component in investing. You should have a realistic understanding of your ability and willingness to stomach large swings in the value of your investments; if you take on too much risk, you might panic and sell at the wrong time.')
-   
-with st.beta_expander("Factors affecting the Risk Tolerance"):
-    st.markdown('It looks at how much market risk—stock volatility, stock market swings, economic or political events, regulatory, or interest rate changes—an investor can tolerate, considering that all of these factors might cause their portfolio to slide.')
-    st.image(
-    "https://cdn.sketchbubble.com/pub/media/catalog/product/optimized1/c/1/c11a79860b06dd7be52599bdc8aa0c8a56b4c90521c8a7ef15aac3b291a8794f/risk-tolerance-slide3.png",
-    width=700,
-)
-    st.markdown("A person's age, investment goals, income, and comfort level all play into determining their risk tolerance.")
-        
-with st.beta_expander("Questions for Risk Tolerance prediction"):
-    st.subheader('Age: Bạn bao nhiêu tuổi rồi ?')
-    st.markdown('  A. <18 tuổi')
-    st.markdown('  B. 18-25 tuổi')
-    st.markdown('  C. >25 tuổi')
 
-    st.subheader('Gender: Giới tính của bạn ?')
-    st.markdown('  A. Nam')
-    st.markdown('  B. Nữ')
 
-    st.subheader('Marital: Tình trạng hôn nhân của bạn ?')
-    st.markdown('  A. Độc thân (chưa kết hôn hoặc đã ly hôn)')
-    st.markdown('  B. Đã kết hôn')
-
-    st.subheader('Income: Thu nhập cá nhân hàng tháng của bạn nằm trong khoảng nào ?')
-    st.markdown('  A. <3tr')
-    st.markdown('  B. 3tr-12tr')
-    st.markdown('  C. >12tr')
-
-    st.subheader('Ratio: Bạn dành bao nhiêu phần trăm trong thu nhập để phục vụ cho mục đích đầu tư ?')
-    st.markdown('  A. <20%')
-    st.markdown('  B. 20%-50%')
-    st.markdown('  C. >50%')
-
-    st.subheader('Education: Trình độ học vấn của bạn ?')
-    st.markdown('  A. Dưới đại học.')
-    st.markdown('  B. Đại học.')
-    st.markdown(' C. Sau đại học (thạc sĩ, tiến sĩ hoặc cao hơn).')
-
-    st.subheader('Profession: Bạn đánh giá về kiến thức trong đầu tư của bạn thế nào?')
-    st.markdown('  A. Không có/chưa có bất kỳ kinh nghiệm trong lĩnh vực đầu tư.')
-    st.markdown('  B. Có ít kiến thức trong đầu tư. Chủ yếu học hỏi qua sách báo, Internet.')
-    st.markdown('  C. Có nhiều kiến thức đầu tư, đã/đang hoạt động trong lĩnh vực liên quan đến đầu tư')
-
-    st.subheader('Optimism: Bạn mong muốn mình sẽ là trường hợp nào trong 2 trường hợp sau ?')
-    st.markdown('  A. Lợi suất nhận được từ các khoản đầu tư cao hơn ngân hàng một chút, ổn định.')
-    st.markdown('  B. Lợi suất nhận được từ các khoản đầu tư có thể lỗ nhiều hoặc lãi nhiều, không ổn định.')
-
-    st.subheader('Source: Nguồn thu nhập chính của bạn là gì ?')
-    st.markdown('  A. Lương công việc chính.')
-    st.markdown('  B. Đầu tư.')
-    st.markdown('  C. Khác.')
-
-with st.beta_expander("Levels"):
-    st.image(
-    "https://img.etimg.com/photo/49085549.cms",
-    width=500,clamp = True,
-)
-    st.subheader('Score:  0 – 18')
-    st.markdown(' Conservative tolerance for risk')
-    st.subheader('Score:  19 – 32')
-    st.markdown(' Average/moderate tolerance for risk')
-    st.subheader('Score:  33 – 47')
-    st.markdown(' Aggressive tolerance for risk')
-
-# Reads in saved classification model
+# Reads in saved Regression model
 load_clf = pickle.load(open('model.pkl', 'rb'))
 
 # Apply model to make predictions
