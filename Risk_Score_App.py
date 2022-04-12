@@ -15,10 +15,6 @@ This app uses ML model to predict the **Risk Tolerance** score!
 Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with more than 500 responses of participants in Ho Chi Minh City.
 """)
 
-st.write("""
-The **KNN Regression** algorithm is built with a **Mean absolute error** of approximately ***960***.
-""")
-
 #st.image("https://www.plan-wisely.com/wp-content/uploads/sites/2/2020/07/Risk.png",
 #    width=700,)
 image = Image.open('NGHIÊN CỨU KHOA HỌC (1).png')
