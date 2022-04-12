@@ -116,7 +116,7 @@ load_clf = pickle.load(open('model.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = load_clf.predict(df)
-if st.buttion("Apply"):
+if st.button("Apply"):
     st.header('Prediction of Risk Tolerance Score')
     st.info(prediction.round(decimals=1))
 
