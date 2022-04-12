@@ -152,11 +152,11 @@ st.markdown('---')
 
 def classify(prediction):
     if load_clf.predict(df) <= 18:
-        st.subheader("Conservative tolerance for risk")
+        st.info("Conservative tolerance for risk")
     elif load_clf.predict(df) >= 19 and load_clf.predict(df)<=32:
-        st.subheader("Average/moderate tolerance for risk")     
+        st.info("Average/moderate tolerance for risk")     
     else:
-        st.write(" Aggressive tolerance for risk")
+        st.info(" Aggressive tolerance for risk")
         
 st.header('Level')
 classify(prediction)
