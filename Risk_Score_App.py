@@ -42,14 +42,18 @@ Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with mo
 #st.image("https://www.plan-wisely.com/wp-content/uploads/sites/2/2020/07/Risk.png",
 #    width=700,)
 
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.write(' ')
-with col2:
-    image = Image.open('NGHIÊN CỨU KHOA HỌC (1).png')
-    st.image(image, caption='Members of Group 35',width = 600)
-with col3:
-    st.write('   ')
+#col1, col2, col3 = st.columns(3)
+#with col1:
+ #   st.write(' ')
+#with col2:
+#    image = Image.open('NGHIÊN CỨU KHOA HỌC (1).png')
+ #   st.image(image, caption='Members of Group 35',width = 600)
+#with col3:
+ #  st.write('   ')
+  
+background = Image.open("NGHIÊN CỨU KHOA HỌC (1).png")
+col1, col2, col3 = st.columns([0.2, 5, 0.2])
+col2.image(background, use_column_width=True)
     
 st.write('---')
 
