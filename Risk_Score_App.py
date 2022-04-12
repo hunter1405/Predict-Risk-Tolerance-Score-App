@@ -32,7 +32,8 @@ if uploaded_file is not None:
     input_df = pd.read_csv(uploaded_file)
 else:
     def user_input_features():
-        Age = st.sidebar.selectbox('Age: Bạn bao nhiêu tuổi rồi ?',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
+        Age = st.selectbox('Age: Bạn bao nhiêu tuổi rồi ?',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
+        st.write('You selected:', Age)
         Gender = st.sidebar.selectbox('Gender: Giới tính của bạn ?',('A. Nam','B. Nữ'))
         Marital = st.sidebar.selectbox('Marital: Tình trạng hôn nhân của bạn ?',('A. Độc thân\n(chưa kết hôn hoặc đã ly hôn)','B. Đã kết hôn'))
         Income = st.sidebar.selectbox('Income: Thu nhập cá nhân hàng tháng của bạn nằm trong khoảng nào ?',('A. <3tr','B. 3tr-12tr','C. >12tr'))
