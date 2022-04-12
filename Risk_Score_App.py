@@ -12,7 +12,7 @@ st.image(
 st.write("""
 # Risk Tolerance Score Prediction App
 This app uses ML model to predict the **Risk Tolerance** score!
-Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with more than 500 responses of partipants in Ho Chi Minh City.
+Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with more than 500 responses of participants in Ho Chi Minh City.
 """)
 
 st.write("""
