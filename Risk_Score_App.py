@@ -6,6 +6,15 @@ from PIL import Image
 
 st.set_page_config(layout="wide")
 
+h = st.markdown("""
+<style>
+body {
+    color: #fff;
+    background-color: #11A27B;
+    /* font-size: 40px; */
+}
+</style>""", unsafe_allow_html=True)
+
 st.image(
     "https://cca.uel.edu.vn/Resources/Images/SubDomain/cca/UEL%20Brand%20Toolkit/UEL%20-%20logo%20official.png",
     width=100,
@@ -126,12 +135,14 @@ load_clf = pickle.load(open('model.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = load_clf.predict(df)
+
 m = st.markdown("""
 <style>
 div.stButton > button:first-child {
 background-color: #1F618D;color:white;font-size:20px;height:3em;width:30em;border-radius:10px 10px 10px 10px;
 }
 </style>""", unsafe_allow_html=True)
+
 if st.button("Submit this form"):
     st.header('Prediction of Risk Tolerance Score')
     st.info(prediction.round(decimals=1))
