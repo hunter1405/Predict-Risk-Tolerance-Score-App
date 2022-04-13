@@ -11,7 +11,7 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3498DB;">
   <a class="navbar-brand" href="https://www.uel.edu.vn" target="_blank">
-  <img class="image-25"src="https://www.uel.edu.vn/Resources/Images/SubDomain/HomePage/Style/logo_uel.png" width="400"
+  <img class="image-25"src="https://www.uel.edu.vn/Resources/Images/SubDomain/HomePage/Style/logo_uel.png" width="350"
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@ Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with mo
  #   st.write(' ')
 #with col2:
 #    image = Image.open('NGHIÊN CỨU KHOA HỌC (1).png')
- #   st.image(image, caption='Members of Group 35',width = 600)
+ #   st.image(image, caption='Members of Group 35')
 #with col3:
  #  st.write('   ')
   
@@ -62,7 +62,7 @@ with st.expander("What is Risk Tolerance?"):
     st.markdown('**Risk tolerance** is the degree of variability in investment returns that an investor is willing to withstand in their financial planning.')
     st.image(
     "https://www.tnex.com.vn/wp-content/uploads/2021/10/7s-01-800x400.png",
-    width=700,
+    width=800,
 )
     st.markdown('Risk tolerance is an important component in investing. You should have a realistic understanding of your ability and willingness to stomach large swings in the value of your investments; if you take on too much risk, you might panic and sell at the wrong time.')
    
@@ -70,7 +70,7 @@ with st.expander("Factors affecting the Risk Tolerance"):
     st.markdown('It looks at how much market risk—stock volatility, stock market swings, economic or political events, regulatory, or interest rate changes—an investor can tolerate, considering that all of these factors might cause their portfolio to slide.')
     st.image(
     "https://cdn.sketchbubble.com/pub/media/catalog/product/optimized1/c/1/c11a79860b06dd7be52599bdc8aa0c8a56b4c90521c8a7ef15aac3b291a8794f/risk-tolerance-slide3.png",
-    width=700,
+    width=800,
 )
     st.markdown("A person's age, investment goals, income, and comfort level all play into determining their risk tolerance.")
         
