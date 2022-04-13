@@ -174,7 +174,7 @@ background-color: #3498DB;color:white;font-size:20px;height:3em;width:30em;borde
 
 if st.button("Submit this form"):
     st.header('Prediction of Risk Tolerance Score')
-    st.info(prediction.round(decimals=1))
+    st.info("Your score: ",prediction.round(decimals=1))
 
     def classify(prediction):
         if load_clf.predict(df) <= 18:
