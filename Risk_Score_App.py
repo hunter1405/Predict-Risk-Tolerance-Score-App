@@ -136,7 +136,6 @@ def user_input_features():
                 'Optimism': Optimism.split('.')[0],
                 'Objective': Objective.split('.')[0]}
         features = pd.DataFrame(data, index=[0])
-        st.experimental_rerun()
         return features
 input_df = user_input_features()
 
