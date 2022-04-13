@@ -88,9 +88,15 @@ with st.expander("Levels"):
 
 l = st.markdown("""
 <style>
+body {
+    color: #fff;
+}
 div.row-widget.stRadio > div {
     flex-direction: row;
     align-items: stretch;
+}
+div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > div:first-child {
+    background-color: cyan;
 }
 </style>""", unsafe_allow_html=True)     
 # Collects user input features into dataframe
