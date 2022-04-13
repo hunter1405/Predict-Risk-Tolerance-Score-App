@@ -31,13 +31,6 @@ div.fullScreenFrame > div {
 }
 </style>""", unsafe_allow_html=True)
 
-l = st.markdown("""
-<style>
-div.row-widget.stRadio > div {
-    background-color: cyan-blue;
-}
-</style>""")
-
 #Title
 original_title = '<p style="text-align: center; color:#3498DB; text-shadow: 2px 2px 4px #000000; font-size: 50px;">Risk Tolerance Score Prediction App</p>'
 st.markdown(original_title, unsafe_allow_html=True)
