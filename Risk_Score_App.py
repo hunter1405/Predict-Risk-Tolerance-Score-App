@@ -93,7 +93,7 @@ body {
 }
 div.row-widget.stRadio > div {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > div:first-child {
     background-color: cornflowerblue;
