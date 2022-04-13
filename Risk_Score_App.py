@@ -163,7 +163,8 @@ df = df[:1] # Selects only the first row (the user input data)
 load_clf = pickle.load(open('model.pkl', 'rb'))
 
 # Apply model to make predictions
-prediction = load_clf.predict(df)
+array = load_clf.predict(df)
+prediction = print(' '.join(str(x) for x in array))
 
 m = st.markdown("""
 <style>
@@ -174,7 +175,7 @@ background-color: #1F618D;color:white;font-size:20px;height:3em;width:30em;borde
 
 if st.button("Submit this form"):
     st.header('Prediction of Risk Tolerance Score')
-    st.info(" ".join(map(str,prediction.round(decimals=1)))))
+    st.info(prediction.round(decimals=1)))))
 
     def classify(prediction):
         if load_clf.predict(df) <= 18:
