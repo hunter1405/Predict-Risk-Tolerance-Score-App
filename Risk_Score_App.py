@@ -99,7 +99,7 @@ div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > 
 def user_input_features():
         st.header('Please fill-in all required information in Vietnamese')
         st.subheader('Bạn bao nhiêu tuổi rồi ?')
-        Age = st.radio(('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi')
+        Age = st.radio('',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
         st.write('You selected:', Age.split('.')[1])
         st.subheader('Giới tính của bạn ?')
         Gender = st.radio('',('A. Nam','B. Nữ'))
