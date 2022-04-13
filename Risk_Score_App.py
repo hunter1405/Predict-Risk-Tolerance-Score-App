@@ -34,13 +34,9 @@ div.fullScreenFrame > div {
 #Title
 original_title = '<p style="text-align: center; color:#3498DB; text-shadow: 2px 2px 4px #000000; font-size: 60px;">Risk Tolerance Score Prediction App</p>'
 st.markdown(original_title, unsafe_allow_html=True)
-# st.title("**Risk Tolerance Score Prediction App**")
 
 st.write("""This app uses ML model to predict the **Risk Tolerance** score!
 Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with more than 500 responses of participants in Ho Chi Minh City.""")
-
-#st.image("https://www.plan-wisely.com/wp-content/uploads/sites/2/2020/07/Risk.png",
-#    width=700,)
 
 #col1, col2, col3 = st.columns(3)
 #with col1:
