@@ -33,7 +33,7 @@ div.fullScreenFrame > div {
 
 #Title
 original_title = '<p style="text-align: center; color:#3498DB; text-shadow: 2px 2px 4px #000000; font-size: 50px;">Risk Tolerance Score Prediction App</p>'
-st.markdown(original_title, unsafe_allow_html=True)
+st.title(original_title, unsafe_allow_html=True)
 # st.title("**Risk Tolerance Score Prediction App**")
 
 st.write("""This app uses ML model to predict the **Risk Tolerance** score!
