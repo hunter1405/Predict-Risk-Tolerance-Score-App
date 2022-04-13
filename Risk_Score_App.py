@@ -125,7 +125,6 @@ def user_input_features():
         st.subheader('Nguồn thu nhập chính của bạn là gì ?')
         Objective = st.radio('',('A. Lương công việc chính.','B. Đầu tư.','C. Khác.'))
         st.write('You selected:', Objective.split('.')[1])
-        st.experimental_rerun()
             
         data = {'Age': Age.split('.')[0],
                 'Gender': Gender.split('.')[0],
@@ -137,6 +136,7 @@ def user_input_features():
                 'Optimism': Optimism.split('.')[0],
                 'Objective': Objective.split('.')[0]}
         features = pd.DataFrame(data, index=[0])
+        st.experimental_rerun()
         return features
 input_df = user_input_features()
 
