@@ -85,7 +85,7 @@ with st.expander("Levels"):
     st.markdown(' Average/moderate tolerance for risk')
     st.subheader('Score:  33 – 47')
     st.markdown(' Aggressive tolerance for risk')
-
+# Set up the checkbox
 l = st.markdown("""
 <style>
 body {
@@ -93,10 +93,10 @@ body {
 }
 div.row-widget.stRadio > div {
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
 }
 div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > div:first-child {
-    background-color: cyan;
+    background-color: cyan-blue;
 }
 </style>""", unsafe_allow_html=True)     
 # Collects user input features into dataframe
