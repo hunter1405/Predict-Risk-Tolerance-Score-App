@@ -1,8 +1,11 @@
 body {
-    background-color: #eee;
+    color: #fff;
 }
 
-.fullScreenFrame > div {
-    display: flex;
-    justify-content: center;
+div.row-widget.stRadio > div {
+    flex-direction: row;
+    align-items: stretch;
 }
+
+div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > div:first-child {
+    backgroun
