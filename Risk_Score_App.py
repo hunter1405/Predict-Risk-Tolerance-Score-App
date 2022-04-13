@@ -92,7 +92,7 @@ body {
     color: #fff;
 }
 div.row-widget.stRadio > div {
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
 }
 div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > div:first-child {
