@@ -92,7 +92,6 @@ body {
     color: #fff;
 }
 div.row-widget.stRadio > div {
-    display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
