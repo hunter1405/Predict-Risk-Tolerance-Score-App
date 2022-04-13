@@ -168,7 +168,7 @@ prediction = load_clf.predict(df)
 m = st.markdown("""
 <style>
 div.stButton > button:first-child {
-background-color: #1F618D;color:white;font-size:20px;height:3em;width:30em;border-radius:10px 10px 10px 10px;
+background-color: #3498DB;color:white;font-size:20px;height:3em;width:30em;border-radius:10px 10px 10px 10px;
 }
 </style>""", unsafe_allow_html=True)
 
