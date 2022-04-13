@@ -96,7 +96,7 @@ div.row-widget.stRadio > div {
     align-items: center;
 }
 div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > div:first-child {
-    background-color: cyan-blue;
+    background-color: cornflowerblue;
 }
 </style>""", unsafe_allow_html=True)     
 # Collects user input features into dataframe
