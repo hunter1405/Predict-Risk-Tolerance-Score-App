@@ -89,6 +89,16 @@ with st.expander("Levels"):
 # Collects user input features into dataframe
 def user_input_features():
         st.header('Please fill-in all required information in Vietnamese')
+        st.markdown(
+        """
+        <style>
+        span[data-baseweb="tag"] {
+        background-color: blue !important;
+        }
+        </style>
+        """,
+         unsafe_allow_html=True,
+        )
         st.subheader('Bạn bao nhiêu tuổi rồi ?')
         Age = st.radio('',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
         st.write('You selected:', Age.split('.')[1])
