@@ -86,20 +86,17 @@ with st.expander("Levels"):
     st.subheader('Score:  33 – 47')
     st.markdown(' Aggressive tolerance for risk')
 
+l = st.markdown("""
+<style>
+div.row-widget.stRadio > div {
+    flex-direction: row;
+    align-items: stretch;
+}
+</style>""", unsafe_allow_html=True)     
 # Collects user input features into dataframe
 def user_input_features():
         st.header('Please fill-in all required information in Vietnamese')
         st.subheader('Bạn bao nhiêu tuổi rồi ?')
-        st.markdown(
-        """
-        <style>
-        span[data-baseweb="tag"] {
-        background-color: blue !important;
-        }
-        </style>
-        """,
-         unsafe_allow_html=True,
-        )
         Age = st.radio('',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
         st.write('You selected:', Age.split('.')[1])
         st.subheader('Giới tính của bạn ?')
