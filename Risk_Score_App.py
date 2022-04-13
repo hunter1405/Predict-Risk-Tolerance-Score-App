@@ -163,8 +163,7 @@ df = df[:1] # Selects only the first row (the user input data)
 load_clf = pickle.load(open('model.pkl', 'rb'))
 
 # Apply model to make predictions
-array = load_clf.predict(df)
-prediction = print(' '.join(str(x) for x in array))
+prediction = load_clf.predict(df)
 
 m = st.markdown("""
 <style>
