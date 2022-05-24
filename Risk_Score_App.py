@@ -32,11 +32,11 @@ div.fullScreenFrame > div {
 </style>""", unsafe_allow_html=True)
 
 #Title
-original_title = '<p style="text-align: center; color:#3498DB; text-shadow: 2px 2px 4px #000000; font-size: 60px;">Risk Tolerance Score Prediction App</p>'
+original_title = '<p style="text-align: center; color:#3498DB; text-shadow: 2px 2px 4px #000000; font-size: 60px;">Dự Đoán Khả Năng Chịu Đựng Rủi Ro</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 
-st.write("""This app uses ML model to predict the **Risk Tolerance** score!
-Data obtained from **UEL-ers** in Python by ***Group 35*** from a survey with more than 500 responses of participants in Ho Chi Minh City.""")
+st.write("""Trang web này sử dụng mô hình ML để dự đoán điểm ** Khả năng chịu rủi ro **!
+Dữ liệu thu được của *** Group 35 *** được lấy từ một cuộc khảo sát với hơn 500 người tham gia tại Thành phố Hồ Chí Minh.""")
 
 #col1, col2, col3 = st.columns(3)
 #with col1:
