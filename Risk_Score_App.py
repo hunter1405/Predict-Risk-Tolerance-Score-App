@@ -182,11 +182,11 @@ if st.button("Bắt đầu tính điểm"):
    
     def reccomend(prediction):
         if load_clf.predict(df) <= 18:
-            st.info("For a Conservative level, we recommend an investment channel with low volatility, aiming at capital adequacy, and protecting capital from the impact of inflation. The preferable investment channel for you are: **gold**, **savings**, **dollars**")
+            st.info("chúng tôi đề xuất bạn nên đầu tư vào chủ yếu vào nhóm **tài sản trái phiếu** là **50%**, **chứng khoán** **40%** và **10%** **trái phiếu**.")
         elif load_clf.predict(df) >= 19 and load_clf.predict(df)<=32:
-            st.info("For a Average/moderate level, we recommend an investment channel with growth potential. The preferable investment channel for you are: **stocks**, **real estate**")     
+            st.info("Chúng tôi khuyến nghị bạn nên đầu tư vào chủ yếu vào nhóm **tài sản chứng khoán** là **50%**, **chứng khoán phái sinh** hoặc **coin** **30%** và **20%** **trái phiếu**.")     
         else:
-            st.info("For a Aggressive level, we recommend a high-risk investment channel with high volatility in the short, medium and long term. However, the return can be significantly higher than the inflation rate. The right investment channel for you are: **stock**, **commodity markets**, **money markets**") 
+            st.info("chúng tôi đề xuất bạn nên đầu tư vào chủ yếu vào nhóm **tài sản chứng khoán phái sinh** hoặc **coin**  là **50%**, **chứng khoán** **30%** và **20%** **trái phiếu**.") 
     st.header('Mức chịu đựng rủi ro')
     classify(prediction)
     st.header('Khuyến nghị')
