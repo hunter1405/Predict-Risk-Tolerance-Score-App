@@ -97,7 +97,7 @@ div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > 
 </style>""", unsafe_allow_html=True)     
 # Collects user input features into dataframe
 def user_input_features():
-        st.header('Please fill-in all required information in Vietnamese')
+        st.header('Vui lòng điền các thông tin cần thiết dưới đây')
         st.subheader('Bạn bao nhiêu tuổi rồi ?')
         Age = st.radio('',('A. <18 tuổi','B. 18-25 tuổi','C. >25 tuổi'))
         st.write('You selected:', Age.split('.')[1])
@@ -168,17 +168,17 @@ background-color: #3498DB;color:white;font-size:20px;height:3em;width:30em;borde
 }
 </style>""", unsafe_allow_html=True)
 
-if st.button("Submit this form"):
-    st.header('Prediction of Risk Tolerance Score')
+if st.button("Bắt đầu tính điểm"):
+    st.header('Điểm chịu đựng rủi ro được dự đoán')
     st.info(str(prediction))
 
     def classify(prediction):
         if load_clf.predict(df) <= 18:
-            st.info("Conservative tolerance for risk")
+            st.info("Khả năng chấp nhận rủi ro thấp")
         elif load_clf.predict(df) >= 19 and load_clf.predict(df)<=32:
-            st.info("Average/moderate tolerance for risk")     
+            st.info("Khả năng chấp nhận rủi ro trung bình")     
         else:
-            st.info(" Aggressive tolerance for risk")
+            st.info("Khả năng chấp nhận rủi ro cao")
    
     def reccomend(prediction):
         if load_clf.predict(df) <= 18:
@@ -187,17 +187,17 @@ if st.button("Submit this form"):
             st.info("For a Average/moderate level, we recommend an investment channel with growth potential. The preferable investment channel for you are: **stocks**, **real estate**")     
         else:
             st.info("For a Aggressive level, we recommend a high-risk investment channel with high volatility in the short, medium and long term. However, the return can be significantly higher than the inflation rate. The right investment channel for you are: **stock**, **commodity markets**, **money markets**") 
-    st.header('Level')
+    st.header('Mức chịu đựng rủi ro')
     classify(prediction)
-    st.header('Reccommendation')
+    st.header('Khuyến nghị')
     reccomend(prediction)
 
 else:
-    st.header('Prediction of Risk Tolerance Score')
+    st.header('Điểm chịu đựng rủi ro được dự đoán')
     st.info("Missing information")
-    st.header('Level')
+    st.header('Mức chịu đựng rủi ro')
     st.info("Missing information")
-    st.header('Reccommendation')
+    st.header('Khuyến nghị')
     st.info("Missing information")
 
 st.markdown('---')
