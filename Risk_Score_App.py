@@ -35,8 +35,8 @@ div.fullScreenFrame > div {
 original_title = '<p style="text-align: center; color:#3498DB; text-shadow: 2px 2px 4px #000000; font-size: 60px;">Dự Đoán Khả Năng Chịu Đựng Rủi Ro</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 
-st.write("""Trang web này sử dụng mô hình ML để dự đoán điểm ** Khả năng chịu rủi ro **!
-Dữ liệu thu được của *** Group 35 *** được lấy từ một cuộc khảo sát với hơn 500 người tham gia tại Thành phố Hồ Chí Minh.""")
+st.write("""Trang web này sử dụng mô hình Machine Learning để dự đoán điểm ** Khả năng chịu rủi ro **!
+Dữ liệu thu được của *** Nhóm sinh viên UEL *** được lấy từ một cuộc khảo sát với hơn 500 người tham gia tại Thành phố Hồ Chí Minh.""")
 
 #col1, col2, col3 = st.columns(3)
 #with col1:
@@ -139,7 +139,7 @@ def user_input_features():
         return features
 input_df = user_input_features()
 
-# Combines user input features with entire penguins dataset
+# Combines user input features with entire dataset
 # This will be useful for the encoding phase
 penguins_raw = pd.read_csv('data_raw.csv')
 penguins = penguins_raw.drop(columns=['Score','Unnamed: 0'])
@@ -152,8 +152,6 @@ for col in encode:
     df = pd.concat([df,dummy], axis=1)
     del df[col]
 df = df[:1] # Selects only the first row (the user input data)
-
-
 
 # Reads in saved Regression model
 load_clf = pickle.load(open('model.pkl', 'rb'))
